@@ -75,13 +75,13 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/logo.svg" alt="logo" />
+        <img src="/assets/images/chbanner.png" alt="logo" className="w-42 h-auto" />
 
-        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">
+        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-4">
           Create a new account
         </h2>
         <p className="text-light-3 small-medium md:base-regular mt-2">
-          To use snapgram, Please enter your details
+          Please enter your details below.
         </p>
 
         <form
@@ -143,7 +143,7 @@ const SignupForm = () => {
             )}
           />
 
-          <Button type="submit" className="shad-button_primary">
+          <Button type="submit" className="bg-[rgb(18,55,42)]">
             {isCreatingAccount || isSigningInUser || isUserLoading ? (
               <div className="flex-center gap-2">
                 <Loader /> Loading...
@@ -157,7 +157,7 @@ const SignupForm = () => {
             Already have an account?
             <Link
               to="/sign-in"
-              className="text-primary-500 text-small-semibold ml-1">
+              style={{ color: 'rgb(102, 187, 106)' }} className="text-small-semibold ml-1">
               Log in
             </Link>
           </p>
